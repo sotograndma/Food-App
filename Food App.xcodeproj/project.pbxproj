@@ -11,6 +11,9 @@
 		A42A396425EC8FAA0015BA62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A396325EC8FAA0015BA62 /* ContentView.swift */; };
 		A42A396625EC8FAC0015BA62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42A396525EC8FAC0015BA62 /* Assets.xcassets */; };
 		A42A396925EC8FAC0015BA62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42A396825EC8FAC0015BA62 /* Preview Assets.xcassets */; };
+		A42A397525EC96230015BA62 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A397425EC96230015BA62 /* HomeViewModel.swift */; };
+		A42A397925EC9F520015BA62 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A397825EC9F520015BA62 /* Menu.swift */; };
+		A42A398025ECA3600015BA62 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A397F25ECA3600015BA62 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		A42A396525EC8FAC0015BA62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A42A396825EC8FAC0015BA62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A42A396A25EC8FAC0015BA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42A397425EC96230015BA62 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A42A397825EC9F520015BA62 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		A42A397F25ECA3600015BA62 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,9 @@
 		A42A396025EC8FAA0015BA62 /* Food App */ = {
 			isa = PBXGroup;
 			children = (
+				A42A397125EC91640015BA62 /* ViewModel */,
+				A42A397225EC916C0015BA62 /* Model */,
+				A42A397325EC91730015BA62 /* View */,
 				A42A396125EC8FAA0015BA62 /* Food_AppApp.swift */,
 				A42A396325EC8FAA0015BA62 /* ContentView.swift */,
 				A42A396525EC8FAC0015BA62 /* Assets.xcassets */,
@@ -67,6 +76,30 @@
 				A42A396825EC8FAC0015BA62 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A42A397125EC91640015BA62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A42A397425EC96230015BA62 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A42A397225EC916C0015BA62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A42A397325EC91730015BA62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A42A397825EC9F520015BA62 /* Menu.swift */,
+				A42A397F25ECA3600015BA62 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A42A396425EC8FAA0015BA62 /* ContentView.swift in Sources */,
+				A42A397525EC96230015BA62 /* HomeViewModel.swift in Sources */,
+				A42A398025ECA3600015BA62 /* Home.swift in Sources */,
+				A42A397925EC9F520015BA62 /* Menu.swift in Sources */,
 				A42A396225EC8FAA0015BA62 /* Food_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
