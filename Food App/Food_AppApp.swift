@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct Food_AppApp: App {
@@ -14,4 +15,13 @@ struct Food_AppApp: App {
             ContentView()
         }
     }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  
+  func application(_ application: UIApplication, didFinishLaunchingWithOptionslaunchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    
+    FirebaseApp.configure()
+    return true
+  }
 }
