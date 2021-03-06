@@ -50,40 +50,47 @@ struct Home: View {
         
         Divider()
         
-        ScrollView(.vertical, showsIndicators: false, content: {
-          VStack(spacing: 25) {
-            ForEach(HomeModel.filtered) { item in
-              
-              ZStack(alignment: Alignment(horizontal: .center, vertical: .top), content : {
+        if HomeModel.items.isEmpty{
+          Spacer()
+          ProgressView()
+          Spacer()
+        }
+        else{
+          ScrollView(.vertical, showsIndicators: false, content: {
+            VStack(spacing: 25) {
+              ForEach(HomeModel.filtered) { item in
                 
-                ItemView(item: item)
-                
-                HStack{
-                  Text("FREE DELIVERY")
-                    .foregroundColor(.white)
-                    .padding(.vertical, 10)
-                    .padding(.horizontal)
-                    .background(Color.pink)
+                ZStack(alignment: Alignment(horizontal: .center, vertical: .top), content : {
                   
-                  Spacer(minLength: 0)
+                  ItemView(item: item)
                   
-                  Button(action: {}, label: {
-                    Image(systemName: "plus")
+                  HStack{
+                    Text("FREE DELIVERY")
                       .foregroundColor(.white)
-                      .padding(10)
+                      .padding(.vertical, 10)
+                      .padding(.horizontal)
                       .background(Color.pink)
-                      .clipShape(Circle())
-                  })
-                }
-                .padding(.trailing,10)
-                .padding(.top,10)
-                
-              })
-              .frame(width: UIScreen.main.bounds.width - 30)
+                    
+                    Spacer(minLength: 0)
+                    
+                    Button(action: {}, label: {
+                      Image(systemName: "plus")
+                        .foregroundColor(.white)
+                        .padding(10)
+                        .background(Color.pink)
+                        .clipShape(Circle())
+                    })
+                  }
+                  .padding(.trailing,10)
+                  .padding(.top,10)
+                  
+                })
+                .frame(width: UIScreen.main.bounds.width - 30)
+              }
             }
-          }
-          .padding(.top, 10)
-        })
+            .padding(.top, 10)
+          })
+        }
         
       }
       

@@ -10,6 +10,7 @@ import Firebase
 
 @main
 struct Food_AppApp: App {
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
             ContentView()
